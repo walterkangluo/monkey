@@ -2,10 +2,9 @@ package main
 
 import (
 	"fmt"
+	"github.com/bouk/monkey"
 	"os"
 	"strings"
-
-	"bou.ke/monkey"
 )
 
 func main() {
