@@ -1,12 +1,11 @@
-package main
+package examples
 
 import (
 	"fmt"
+	"github.com/monkey"
 	"net"
 	"net/http"
 	"reflect"
-
-	"github.com/bouk/monkey"
 )
 
 func main() {

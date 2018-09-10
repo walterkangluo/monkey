@@ -1,8 +1,8 @@
-package main
+package examples
 
 import (
 	"fmt"
-	"github.com/bouk/monkey"
+	"github.com/monkey"
 	"os"
 	"strings"
 )

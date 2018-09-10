@@ -1,7 +1,8 @@
-package monkey
+package examples
 
 import (
 	"fmt"
+	"github.com/monkey"
 	"net/http"
 	"reflect"
 	"strings"
@@ -9,7 +10,7 @@ import (
 
 func main() {
 	var guard *monkey.PatchGuard
-	guard = PatchInstanceMethod(reflect.TypeOf(http.DefaultClient), "Get", func(c *http.Client, url string) (*http.Response, error) {
+	guard = monkey.PatchInstanceMethod(reflect.TypeOf(http.DefaultClient), "Get", func(c *http.Client, url string) (*http.Response, error) {
 		guard.Unpatch()
 		defer guard.Restore()
 
